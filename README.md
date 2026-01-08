@@ -1,11 +1,55 @@
-Digital-Logic-Circuit-sSmulator-
+Digital-Logic-Circuit-Simulator-
 
-I’m excited to share a project I’ve been working on: a Digital Logic Circuit Simulator built using C++! 💻✨
+# Digital Logic Simulator & Boolean Verifier
 
-This simulator allows users to visualize and test basic gates (AND, OR, XOR, etc.), Half-Adders, Full-Adders, and even verify Boolean Algebra laws through live truth tables. It’s been a fantastic way to deepen my understanding of low-level logic and software architecture.
+A high-performance C++ console application designed to simulate digital logic environments. This tool bridges the gap between theoretical Boolean algebra and practical circuit implementation, featuring real-time logic processing, automated truth table generation, and interactive circuit visualization.
 
-This project was a true collaborative effort. I worked closely with my teammate @Manahil Shazad, and we both played equal roles in bringing this logic to life.
+---
 
-A special thanks to our teacher, @Waqas Ali, for the guidance and support throughout this semester.
+## 🛠 Core Technical Capabilities
 
-Check out the demo video below! #CPP #SoftwareEngineering #DigitalLogic #Coding #FreelanceDeveloper #TechProject
+### 1. Logic Gate Simulation Engine
+Low-level implementation of primary and universal logic gates with built-in input sanitization:
+* **Primary Gates:** AND, OR, NOT, XOR.
+* **Universal Gates:** NAND, NOR.
+* **Visual Logic Mapping:** ASCII representation of signal flow from input pins to output.
+
+### 2. Computational Arithmetic Modules
+Implementation of binary addition logic used in CPU Arithmetic Logic Units (ALUs):
+* **Half-Adder:** Dual-bit addition with Carry-propagation logic.
+* **Full-Adder:** Three-input logic (A, B, Carry-In) providing Sum and Carry-Out synchronization.
+
+### 3. Boolean Optimization & Minimization Tools
+Advanced educational modules for circuit simplification:
+* **Live Law Verification:** Interactive testing for Absorption, Identity, and Idempotent laws.
+* **Proof by Comparison:** Side-by-side truth table analysis comparing complex expressions vs. minimized logic.
+
+### 4. Robust Data Validation
+* **Type Safety:** Custom `numValidation` layer to prevent buffer overflows or invalid character crashes.
+* **Logic Constraints:** Strict bit-level (0, 1) checking to ensure simulation integrity.
+
+---
+
+## 💻 System Architecture
+
+* **Language:** C++
+* **Environment:** Windows OS (Console Subsystem)
+* **Dependencies:** `iostream`, `windows.h` (Console API for UI/UX coloring), `limits`.
+* **Design Pattern:** Functional Modular Programming.
+
+---
+
+## 👥 Contributors
+
+This project was developed through a collaborative effort by:
+
+- **Manahil Shahzad**
+- **Amreeha Eman**
+
+## 🚀 Deployment & Installation
+
+### Compilation
+Utilize a standard C++ compiler (G++ or MSVC) to build the executable:
+
+```bash
+g++ Digital_Logic_Simulator.cpp -o LogicSim
